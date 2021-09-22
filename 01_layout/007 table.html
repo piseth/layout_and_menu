@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>HTML Table Layout</title>
+    <style>
+        body {
+            margin: 0px;
+            font: 14px Arial, sans-serif;
+        }
+
+        table {
+            width: 1170px;
+            margin: auto;
+            border-collapse: collapse;
+        }
+
+        .header {
+            padding: 10px 20px;
+            background-color: #acb3b9;
+        }
+
+        .header h1 {
+            font-size: 24px;
+        }
+
+        .nav {
+            width: 20%;
+            padding: 20px;
+            background-color: #d4d7dc;
+            vertical-align: top;
+        }
+
+        .nav ul {
+            list-style: none;
+            line-height: 24px;
+            padding: 0px;
+        }
+
+        .nav ul li a {
+            color: #333;
+        }
+
+        .article {
+            padding: 20px;
+            background-color: #f2f2f2;
+            vertical-align: top;
+        }
+
+        .footer {
+            background: #acb3b9;
+            text-align: center;
+            padding: 5px;
+        }
+
+        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+        @media screen and (max-width: 600px) {
+
+            table,
+            .nav,
+            .article {
+                width: 100%;
+                height: auto;
+            }
+
+            td {
+                display: block;
+                width: 100%;
+            }
+
+            tr {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td colspan="2" class="header">
+                <h1>Tutorial Republic</h1>
+            </td>
+        </tr>
+        <tr>
+            <td class="nav">
+                <ul>
+                    <li><a href="#" style="color:#333;">Home</a></li>
+                    <li><a href="#" style="color:#333;">About</a></li>
+                    <li><a href="#" style="color:#333;">Contact</a></li>
+                </ul>
+            </td>
+            <td class="article">
+                <h2>Welcome to our site</h2>
+                <p>Here you will learn how to create websites...</p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" class="footer">
+                <p>copyright &copy; tutorialrepublic.com</p>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

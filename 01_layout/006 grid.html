@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .container {
+      margin: auto;
+      width: 1140px;
+      background: #f2f2f2;
+    }
+
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    [class*="col-"] {
+      float: left;
+      padding: 15px;
+      box-sizing: border-box;
+    }
+
+    .col-1 {
+      width: 8.33%;
+    }
+
+    .col-2 {
+      width: 16.66%;
+    }
+
+    .col-3 {
+      width: 25%;
+    }
+
+    .col-4 {
+      width: 33.33%;
+    }
+
+    .col-5 {
+      width: 41.66%;
+    }
+
+    .col-6 {
+      width: 50%;
+    }
+
+    .col-7 {
+      width: 58.33%;
+    }
+
+    .col-8 {
+      width: 66.66%;
+    }
+
+    .col-9 {
+      width: 75%;
+    }
+
+    .col-10 {
+      width: 83.33%;
+    }
+
+    .col-11 {
+      width: 91.66%;
+    }
+
+    .col-12 {
+      width: 100%;
+    }
+
+    body {
+      font: 14px Arial, sans-serif;
+      margin: 0px;
+    }
+
+    .header {
+      padding: 10px 20px;
+      background: #acb3b9;
+    }
+
+    .header h1 {
+      font-size: 24px;
+    }
+
+    .nav,
+    .article {
+      float: left;
+      padding: 20px;
+      min-height: 170px;
+      box-sizing: border-box;
+    }
+
+    .nav {
+      width: 20%;
+      background: #d4d7dc;
+    }
+
+    .article {
+      width: 80%;
+    }
+
+    .nav ul {
+      list-style: none;
+      line-height: 24px;
+      padding: 0px;
+    }
+
+    .nav ul li a {
+      color: #333;
+    }
+
+    .footer {
+      background: #acb3b9;
+      text-align: center;
+      padding: 5px;
+    }
+
+    /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+    @media screen and (max-width: 600px) {
+      .container,
+      .nav,
+      .article {
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Chania</h1>
+    </div>
+
+    <div class="row">
+      <div class="col-3 nav">
+        <ul>
+          <li>The Flight</li>
+          <li>The City</li>
+          <li>The Island</li>
+          <li>The Food</li>
+        </ul>
+      </div>
+
+      <div class="col-9 article">
+        <h1>The City</h1>
+        <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the
+          old town and the modern city.</p>
+        <p>Resize the browser window to see how the content respond to the resizing.</p>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>copyright &copy; tutorialrepublic.com</p>
+    </div>
+  </div>
+</body>
+
+</html>

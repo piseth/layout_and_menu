@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 1140px;
+            margin: auto;
+        }
+        .row {
+            display: flex;
+            flex-direction: row;
+        }
+        .col-1 {
+            flex: 1;
+        }
+        .col-3 {
+            flex: 3;
+        }
+        .col-4{
+            flex: 4;
+        }
+        @media (max-width: 600px) {
+            .container {
+                width: 100%;
+            }
+            .row {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <h2>Welcome to our site</h2>
+                <p>Here you will learn how to create websites...</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <h2>Welcome to our site</h2>
+                <p>Here you will learn how to create websites...</p>
+            </div>
+            <div class="col-3">
+                <h2>Welcome to our site</h2>
+                <p>Here you will learn how to create websites...</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <h2>Welcome to our site</h2>
+                <p>Here you will learn how to create websites...</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
